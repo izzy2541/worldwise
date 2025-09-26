@@ -18,18 +18,18 @@ function App() {
 
   useEffect(function () {
     async function fetchCities() {
-      try { 
-      setIsLoading(true);
-      const res = await fetch(`${BASE_URL}/cities`);
-      const data = await res.json();
-      setCities(data);
-    } catch {
-      alert('There was an error loading data...')
-    } finally {
-      setIsLoading(false)
+      try {
+        setIsLoading(true);
+        const res = await fetch(`${BASE_URL}/cities`);
+        const data = await res.json();
+        setCities(data);
+      } catch {
+        alert('There was an error loading data...')
+      } finally {
+        setIsLoading(false)
+      }
     }
-  }
-  fetchCities();
+    fetchCities();
   }, []);
 
   return (
@@ -44,9 +44,9 @@ function App() {
           />
           <Route path="cities" element={<CityList cities={cities} isLoading={isLoading} />}
           />
-           <Route path="cities" element={<CountryList cities={cities} isLoading={isLoading} />}
+          <Route path="countries" element={<CountryList cities={cities} isLoading={isLoading} />}
           />
-          <Route path="cities" element={<p>Countries</p>} />
+          <Route path="countries" element={<p>Countries</p>} />
           <Route path="form" element={<p>Form</p>} />
         </Route>
         <Route path="*" element={<PageNotFound />} />
