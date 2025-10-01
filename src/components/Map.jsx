@@ -1,4 +1,4 @@
-import { useNavigate, useSearchParams } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { useMap, MapContainer, TileLayer, Marker, Popup, useMapEvents } from "react-leaflet";
 import styles from './Map.module.css';
 import { useCities } from "../contexts/CitiesContext";
