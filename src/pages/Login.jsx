@@ -3,7 +3,7 @@ import Button from "../components/Button";
 import PageNav from "../components/PageNav";
 import { useAuth } from "../contexts/FakeAuthContext";
 import styles from "./Login.module.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function Login() {
   // PRE-FILL FOR DEV PURPOSES
