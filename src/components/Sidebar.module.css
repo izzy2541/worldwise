@@ -2,7 +2,6 @@
     flex-basis: 56rem;
     background-color: var(--color-dark--1);
     padding: 3rem 5rem 3.5rem 5rem;
-  
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -16,4 +15,18 @@
   .copyright {
     font-size: 1.2rem;
     color: var(--color-light--1);
+  }
+
+  @media (max-width: 768px) {
+    .sidebar {
+   flex-basis: 33rem;
+   padding: 2rem;
+    }
+  }
+
+  @media (max-width: 510px) {
+    .sidebar {
+   width: 50px;
+   flex-basis: 21rem;
+    }
   }
