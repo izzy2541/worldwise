@@ -67,10 +67,6 @@ a.ctaLink:hover {
     padding: 0.6rem 1.6rem;
   }
 
-  .nav img {
-    max-width: 140px;
-    height: auto;
-  }
 }
 
 /* Small screens (phones, <600px) */
@@ -95,10 +91,13 @@ a.ctaLink:hover {
     font-size: 1.2rem;
   }
 
-  .nav img {
-    max-width: 120px;
-    height: auto;
-  }
+}
+
+@media (max-width: 510px) {
+.nav img {
+  max-width: 40px;
+  height: auto;
+}
 }
 
 /* Extra small (380px and below) */
@@ -123,7 +122,4 @@ a.ctaLink:hover {
     font-size: 1.1rem;
   }
 
-  .nav img {
-    max-width: 100px;
-  }
 }

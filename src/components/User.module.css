@@ -32,3 +32,11 @@
   text-transform: uppercase;
   cursor: pointer;
 }
+
+/* ✅ Responsive tweaks */
+@media (max-width: 692px) {
+  .user img, .user span {
+    display: none; /* hide avatar */
+  }
+
+}
