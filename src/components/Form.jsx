@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 import BackButton from "./BackButton";
 import Message from "./Message";
 import Spinner from "./Spinner";
-import { useUrlPosition } from "../hooks/UseUrlposition"; 
+import { useUrlPosition } from "../hooks/UseUrlPosition"
 import { useCities } from "../contexts/CitiesContext";
 
 // Helper: Convert ISO country code to flag emoji
