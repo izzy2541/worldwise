@@ -55,3 +55,30 @@
  flex-basis: 21rem;
   }
 } */
+
+
+@media (max-width: 768px) {
+  .buttons{
+    flex-direction: column;
+    gap: 4px;
+    font-size: 0.8em !important;
+  }
+}
+
+@media (max-width: 510px) {
+  .row label,   .row input, .row textarea {
+ font-size: 1em;
+  }
+
+  .flag{
+    display: none;
+  }
+
+  input{
+    font-size: 0.1em;
+  }
+
+  .form{
+    padding: 1.5em;
+  }
+}

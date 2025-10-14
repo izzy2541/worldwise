@@ -76,3 +76,11 @@ input:focus {
     "description": "Import CSS Module as `styles`"
   },
 */
+
+@media (max-width: 480px) {
+.cta, .cta:link, .cta:visited, A.CTA {
+  font-size: 1rem;
+  padding: 0.7rem 1.4rem;
+}
+
+}

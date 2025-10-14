@@ -26,3 +26,11 @@
   .nav a:global(.active) {
     background-color: var(--color-dark--0);
   }
+
+
+  @media (max-width: 510px) {
+    .nav a:link,
+    .nav a:visited {
+      font-size: 1em;
+    }
+    }
