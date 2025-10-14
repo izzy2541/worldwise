@@ -6,10 +6,10 @@ import { useNavigate } from "react-router-dom";
 import BackButton from "./BackButton";
 import Message from "./Message";
 import Spinner from "./Spinner";
-import { useUrlPosition } from "../hooks/useUrlPosition"
+import { useUrlPosition } from "../hooks/useUrlposition"
 import { useCities } from "../contexts/CitiesContext";
 
-// Helper: Convert ISO country code to flag emoji
+//Converts ISO country code to flag emoji
 export function convertToEmoji(countryCode) {
   const codePoints = countryCode
     .toUpperCase()
