@@ -1,7 +1,7 @@
 import { createContext, useEffect, useContext, useReducer } from "react";
 
 const CitiesContext = createContext();
-const BASE_URL = 'http://localhost:9000'
+const BASE_URL = 'https://worldwise-backend-2025-83cbec46088f.herokuapp.com/cities'
 
 const initialState = {
     cities: [],
