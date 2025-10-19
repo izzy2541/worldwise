@@ -3,7 +3,7 @@ import { useMap, MapContainer, TileLayer, Marker, Popup, useMapEvents } from "re
 import styles from './Map.module.css';
 import { useCities } from "../contexts/CitiesContext";
 import { useGeolocation } from "../hooks/useGeolocation";
-import { useUrlPosition } from "../hooks/useUrlPosition";
+import { useUrlPosition } from "../hooks/useUrlposition";
 import { useState, useEffect } from 'react';
 import Button from "./Button";
 
